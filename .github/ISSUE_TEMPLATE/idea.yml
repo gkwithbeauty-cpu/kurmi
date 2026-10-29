@@ -1,0 +1,35 @@
+name: Idea or design proposal
+description: Suggest a capability, design change, or research direction
+title: "[Idea]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Large or cross-cutting changes should begin with discussion. Do not include secrets or private personal data."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are we trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: What would you try, and what alternatives exist?
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and uncertainty
+      description: Consider privacy, security, bias, misuse, and failure modes.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How could we evaluate success?
+    validations:
+      required: true

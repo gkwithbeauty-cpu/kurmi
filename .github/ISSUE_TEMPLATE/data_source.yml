@@ -1,0 +1,41 @@
+name: Data source proposal
+description: Propose a source adapter for review
+title: "[Source]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Only propose sources you are authorized to access. Do not upload real personal records."
+  - type: input
+    id: source
+    attributes:
+      label: Source and official documentation
+    validations:
+      required: true
+  - type: textarea
+    id: permission
+    attributes:
+      label: Access rights, license, and terms
+      description: Explain why automated access and reuse are permitted.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data fields and sensitivity
+      description: Include personal-data, retention, and deletion risks.
+    validations:
+      required: true
+  - type: textarea
+    id: freshness
+    attributes:
+      label: Update cadence and reliability
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Safe test fixture plan
+      description: Use synthetic or appropriately licensed data.
+    validations:
+      required: true
